@@ -22,7 +22,7 @@ for ch in root:
                     print(url, "Размер изображения в норме: ", width, ' x ', height)
 
             except IOError:
-                print(url, f'Изображение не найдено')
+                print(url, 'Изображение не найдено')
 
 
 
