@@ -19,18 +19,18 @@ for ch in root:
                 width = im.size[0]
                 height = im.size[1]
                 if width <= 1000 or height <= 1000:
-                    a=(url, "Размер изображения маловат!: ", width, ' x ', height)
+                    a = (url, 'Размер изображения маловат!: ', width, ' x ', height)
                     print(a)
-                    f.write(str(a))
+                    f.write(str(a) + '\n')
 
                 else:
-                    b=(url, "Размер изображения в норме: ", width, ' x ', height)
+                    b = (url, 'Размер изображения в норме: ', width, ' x ', height)
                     print(b)
-                    f.write(str(b))
+                    f.write(str(b) + '\n')
 
             except IOError:
-                c=(url, 'Изображение не найдено')
+                c = (url, 'Изображение не найдено')
                 print(c)
-                f.write(str(c))
+                f.write(str(c) + '\n')
 
 f.close()
